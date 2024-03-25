@@ -1,0 +1,118 @@
+.navbar{
+    border-bottom: solid 3px green;
+}
+.header-text{
+    text-align: start;
+}
+.button{
+    border-radius: 50px;
+    border: solid 1px white;
+    width: 150px;
+    height: 40px;
+    margin-left: -400px;
+}
+.invester{
+    margin-left: 130px;
+}
+.mobile1{
+    background-image: url(img/mobile2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 600px;
+    padding-right: 340px;
+}
+.about-button{
+    margin-left: 190px;
+}
+.clients-img{
+    position: relative;
+    margin-left: 5px;
+    border-radius: 50%;
+}
+.clients-name{
+    margin-top: -53px;
+    margin-left: 72px;
+}
+.clients-skil{
+    margin-top: 30px;
+    margin-left: 73px;
+}
+.dot{
+    font-size: 70px;
+}
+.footer{
+    height: 130px;
+    background-image: linear-gradient(to bottom right, rgb(12, 180, 12), rgb(136, 240, 136));
+}.footer-text{
+    font-size: 30px;
+}.footer-button{
+    margin-left: 375px;
+    margin-top: 43px;
+}
+.form-img {
+    background-image: url(img/banner-new.jpg);
+}
+.container-form {
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    color: black;
+    margin-left: 380px;
+    margin-right: 388px;
+}
+.user-name {
+    margin-top: 15px;
+    width: 100%;
+    border: 0px;
+}
+.form-button{
+    margin-left: 7px;
+}
+
+@media only screen and (max-width: 600px) {
+    .banner-img{
+        height: 300px;
+        width: auto;
+    }
+    .header-text{
+        margin-left: 100px;
+        margin-top: 25px;
+    }
+    .text{
+        font-size: 15px;
+        margin-left: 35px;
+    }
+    .button{
+        margin-left: 15px;
+    }
+    .features{
+        font-size: 20px;
+    }
+    .cardd{
+        width: 24rem;
+    }
+    .invester{
+        margin-left: 150px;
+    }
+    .aboutus-img{
+        height: 200px;
+        width: 300px;
+    }
+    .mobile1{
+        height: 400px;
+        width: -206px;
+        padding-right: 130px;
+        margin-left: 70px;
+    }
+    .about-button{
+        margin-left: 105px;
+    }
+    .footer-text{
+    font-size: 15px;
+    }
+    .container-form {
+        margin-left: 50px;
+        margin-right: 40px;
+    }
+}
