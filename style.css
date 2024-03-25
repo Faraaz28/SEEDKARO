@@ -43,7 +43,7 @@
 }
 .footer{
     height: 130px;
-    background-image: linear-gradient(to bottom right, rgb(12, 180, 12), rgb(136, 240, 136));
+    background-image: linear-gradient(to bottom right, rgb(59, 230, 59), rgb(148, 230, 148));
 }.footer-text{
     font-size: 30px;
 }.footer-button{
@@ -70,7 +70,7 @@
     margin-left: 7px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
     .banner-img{
         height: 300px;
         width: auto;
