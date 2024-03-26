@@ -76,12 +76,13 @@
         width: auto;
     }
     .header-text{
-        margin-left: 100px;
+        margin-left: 85px;
         margin-top: 25px;
+        font-size: 30px;
     }
     .text{
         font-size: 12px;
-        margin-left: 35px;
+        margin-left: 87px;
     }
     .button{
         margin-left: 1px;
@@ -93,7 +94,7 @@
         width: 22rem;
     }
     .invester{
-        margin-left: 150px;
+        margin-left: 145px;
     }
     .aboutus-img{
         height: 200px;
