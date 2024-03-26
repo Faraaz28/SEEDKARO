@@ -1,5 +1,5 @@
 .navbar{
-    border-bottom: solid 3px green;
+    border-bottom: solid 1px green;
 }
 .header-text{
     text-align: start;
@@ -90,7 +90,7 @@
         font-size: 20px;
     }
     .cardd{
-        width: 24rem;
+        width: 22rem;
     }
     .invester{
         margin-left: 150px;
