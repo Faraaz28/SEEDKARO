@@ -84,13 +84,13 @@
         margin-left: 35px;
     }
     .button{
-        margin-left: 15px;
+        margin-left: 1px;
     }
     .features{
         font-size: 20px;
     }
     .cardd{
-        width: 18rem;
+        width: 20rem;
     }
     .invester{
         margin-left: 150px;
@@ -102,17 +102,17 @@
     .mobile1{
         height: 400px;
         width: -206px;
-        padding-right: 130px;
-        margin-left: 70px;
+        padding-right: 112px;
+        margin-left: 55px;
     }
     .about-button{
         margin-left: 105px;
     }
     .footer-text{
-    font-size: 15px;
+      font-size: 11px;
     }
     .container-form {
-        margin-left: 50px;
-        margin-right: 40px;
+     margin-left: 50px;
+     margin-right: 40px;
     }
 }
