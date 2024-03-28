@@ -1,1 +1,1 @@
-https://seedkaroo.netlify.app/
+preview:https://seedkaroo.netlify.app/
