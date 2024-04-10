@@ -1,20 +1,28 @@
-.navbar{
+.navbar {
     border-bottom: solid 1px rgb(7, 145, 7);
 }
-.header-text{
+
+.header-text {
     text-align: start;
 }
-.button{
+
+.button {
     border-radius: 50px;
     border: solid 1px white;
     width: 150px;
     height: 40px;
     margin-left: -400px;
 }
-.invester{
+
+.invester {
     margin-left: 130px;
 }
-.mobile1{
+
+.About {
+    margin-left: 130px;
+}
+
+.mobile1 {
     background-image: url(img/mobile2.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -22,37 +30,63 @@
     height: 600px;
     padding-right: 340px;
 }
-.about-button{
+
+.about-button {
     margin-left: 190px;
 }
-.clients-img{
+
+.clients-img {
     position: relative;
-    margin-left: 5px;
-    border-radius: 50%;
+    margin: -5px 0px 0px 0px;
+    height: 80px;
+    width: 80px;
 }
-.clients-name{
-    margin-top: -53px;
-    margin-left: 72px;
+
+.row-one {
+
+    padding-left: 100px;
 }
-.clients-skil{
-    margin-top: 30px;
-    margin-left: 73px;
+
+.start-btn {
+    margin-left: -65px;
 }
-.dot{
+
+.end-btn {
+    margin-right: -85px;
+}
+
+.clients-name {
+    margin-top: -65px;
+    margin-left: 90px;
+}
+
+.clients-skil {
+    margin-top: 15px;
+    margin-left: 110px;
+}
+
+.dot {
     font-size: 70px;
 }
-.footer{
+
+.footer {
     height: 130px;
     background-image: linear-gradient(to bottom right, rgb(0, 248, 0), rgb(161, 236, 161));
-}.footer-text{
+}
+
+.footer-text {
     font-size: 30px;
-}.footer-button{
+}
+
+.footer-button {
     margin-left: 375px;
     margin-top: 43px;
 }
+
 .form-img {
     background-image: url(img/banner-new.jpg);
 }
+
 .container-form {
     text-align: center;
     padding: 20px;
@@ -61,65 +95,112 @@
     margin-left: 380px;
     margin-right: 388px;
 }
+
 .user-name {
     margin-top: 15px;
     width: 100%;
     border: 0px;
 }
-.form-button{
+
+.form-button {
     margin-left: 7px;
 }
-.clients{
-    border: solid 1px #d3d3d3;
-}
+
 
 @media only screen and (max-width: 600px) {
-    .banner-img{
+    .logo {
+        margin-left: -45px;
+    }
+
+    .nav-btn {
+        margin-right: -35px;
+    }
+
+    .banner-img {
         height: 300px;
         width: auto;
     }
-    .header-text{
+
+    .header-text {
         margin-left: 85px;
         margin-top: 25px;
         font-size: 30px;
     }
-    .text{
+
+    .text {
         font-size: 13px;
         margin-left: 40px;
     }
-    .button{
+
+    .button {
         margin-left: 1px;
     }
-    .features{
+
+    .features {
         font-size: 20px;
     }
-    .cardd{
+
+    .cardd {
         width: 22rem;
     }
-    .invester{
+
+    .invester {
         margin-left: 135px;
     }
-    .aboutus-img{
+
+    .About {
+        margin-left: 65px;
+        font-size: 28px;
+    }
+
+    .aboutus-img {
         height: 200px;
         width: 300px;
     }
-    .mobile1{
+
+    .mobile1 {
         height: 400px;
         width: -206px;
         padding-right: 112px;
         margin-left: 55px;
     }
-    .about-button{
+
+    .about-button {
         margin-left: 95px;
     }
-    .footer-text{
-      font-size: 22px;
+
+    .footer-text {
+        font-size: 22px;
     }
-    .clients{
+
+    .clients {
         border: solid 1px #d3d3d3;
+        height: 100%;
+        width: 100%;
     }
+
+    .clients-skil {
+        margin-left: 80px;
+    }
+
     .container-form {
-     margin-left: 50px;
-     margin-right: 40px;
+        margin-left: 50px;
+        margin-right: 40px;
     }
+
+    .row-one {
+
+        padding-left: 10px;
+    }
+
+    .start-btn {
+        margin-left: -15px;
+    }
+
+    .end-btn {
+        margin-right: -15px;
+    }
+
+ 
+
 }
