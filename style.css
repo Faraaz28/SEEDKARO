@@ -1,5 +1,6 @@
 .navbar {
-    border-bottom: solid 1px rgb(7, 145, 7);
+    border-bottom: solid 1px rgb(10, 185, 10);
+
 }
 
 .header-text {
@@ -11,15 +12,16 @@
     border: solid 1px white;
     width: 150px;
     height: 40px;
-    margin-left: -400px;
+    margin: 0px 0px 0px -400px;
 }
 
 .invester {
-    margin-left: 130px;
+    margin: 0px 0px 0px 130px;
 }
 
 .About {
-    margin-left: 130px;
+
+    margin: 0px 0px 0px 130px;
 }
 
 .mobile1 {
@@ -32,37 +34,31 @@
 }
 
 .about-button {
-    margin-left: 190px;
+    margin: 0px 0px 0px 190px;
 }
 
 .clients-img {
-    position: relative;
-    margin: -5px 0px 0px 0px;
-    height: 80px;
-    width: 80px;
+
+    margin: 70px 0px 0px 5px;
+    height: 20px;
+    width: 20px;
+    padding: 50px 70px 0px 0px;
+ 
 }
 
-.row-one {
-
-    padding-left: 100px;
-}
-
-.start-btn {
-    margin-left: -65px;
-}
-
-.end-btn {
-    margin-right: -85px;
+.clients-text{
+    margin: 0px 0px 0px -200px;
+   
+   
 }
 
 .clients-name {
-    margin-top: -65px;
-    margin-left: 90px;
+    margin: 25px 0px 0px -100px;
 }
 
 .clients-skil {
-    margin-top: 15px;
-    margin-left: 110px;
+
+    margin: 15px 0px 0px -100px;
 }
 
 .dot {
@@ -79,8 +75,7 @@
 }
 
 .footer-button {
-    margin-left: 375px;
-    margin-top: 43px;
+    margin: 43px 0px 0px 375px;
 }
 
 .form-img {
@@ -92,28 +87,27 @@
     padding: 20px;
     margin: 10px;
     color: black;
-    margin-left: 380px;
-    margin-right: 388px;
+    margin: 0px 388px 0px 380px;
 }
 
 .user-name {
-    margin-top: 15px;
+    margin: 15px 0px 0px 0px;
     width: 100%;
     border: 0px;
 }
 
 .form-button {
-    margin-left: 7px;
+    margin: 0px 0px 0px 7px;
 }
 
 
 @media only screen and (max-width: 600px) {
     .logo {
-        margin-left: -45px;
+        margin: 0px 0px 0px -40px;
     }
 
     .nav-btn {
-        margin-right: -35px;
+        margin: 0px -35px 0px 0px;
     }
 
     .banner-img {
@@ -122,34 +116,34 @@
     }
 
     .header-text {
-        margin-left: 85px;
-        margin-top: 25px;
+        margin: 25px 0px 0px 85px;
         font-size: 30px;
     }
 
     .text {
         font-size: 13px;
-        margin-left: 40px;
+        margin: 0px 0px 0px 40px;
     }
 
     .button {
-        margin-left: 1px;
+        margin: 0px 0px 0px 1px;
     }
 
     .features {
         font-size: 20px;
+     
     }
 
     .cardd {
-        width: 22rem;
+        width: 21rem;
     }
 
     .invester {
-        margin-left: 135px;
+        margin: 0px 0px 0px 100px;
     }
 
     .About {
-        margin-left: 65px;
+        margin: 0px 0px 0px 65px;
         font-size: 28px;
     }
 
@@ -159,48 +153,61 @@
     }
 
     .mobile1 {
-        height: 400px;
-        width: -206px;
-        padding-right: 112px;
-        margin-left: 55px;
-    }
-
-    .about-button {
-        margin-left: 95px;
+        height: 350px;
+        width: 290px;
+        padding-right: 119px;
+        margin: 0px 0px 0px 59px;
     }
 
     .footer-text {
         font-size: 22px;
     }
 
-    .clients {
-        border: solid 1px #d3d3d3;
-        height: 100%;
-        width: 100%;
+    .footer-button {
+        margin: 43px 0px 0px 0px;
     }
 
-    .clients-skil {
-        margin-left: 80px;
+    .about-button {
+        margin: 0px 0px 0px 95px;
     }
 
     .container-form {
-        margin-left: 50px;
-        margin-right: 40px;
+        margin: 0px 0px 0px 0px;
     }
 
-    .row-one {
-
-        padding-left: 10px;
+    .clients-img {
+        margin: 190px 0px 0px 10px;
+        padding: 10px 250px 0px 0px;
     }
-
-    .start-btn {
-        margin-left: -15px;
+    
+    .clients-text{
+        margin: -300px 0px 0px 0px;
     }
-
-    .end-btn {
-        margin-right: -15px;
+    
+    .clients-name {
+       margin: 50px 0px 0px 90px;
     }
-
- 
+    
+    .clients-skil {
+        margin: 15px 0px 0px 100px;
+    }
 
 }
+
+
+
+
+.owl-nav {
+    font-size: 130%;
+    text-align: end !important;
+  }
+  
+  .owl-carousel .owl-nav button.owl-next,
+  .owl-carousel .owl-nav button.owl-prev {
+    color: rgb(0, 0, 0);
+    background-color: rgb(8, 8, 8);
+    border-radius: 50%;
+    border: 5px solid rgb(14, 14, 14);
+    width: 50px;
+    height: 50px;
+  }
