@@ -43,13 +43,13 @@
     height: 20px;
     width: 20px;
     padding: 50px 70px 0px 0px;
- 
+
 }
 
-.clients-text{
+.clients-text {
     margin: 0px 0px 0px -200px;
-   
-   
+
+
 }
 
 .clients-name {
@@ -131,7 +131,7 @@
 
     .features {
         font-size: 20px;
-     
+
     }
 
     .cardd {
@@ -179,15 +179,15 @@
         margin: 190px 0px 0px 10px;
         padding: 10px 250px 0px 0px;
     }
-    
-    .clients-text{
+
+    .clients-text {
         margin: -300px 0px 0px 0px;
     }
-    
+
     .clients-name {
-       margin: 50px 0px 0px 90px;
+        margin: 50px 0px 0px 90px;
     }
-    
+
     .clients-skil {
         margin: 15px 0px 0px 100px;
     }
@@ -200,14 +200,14 @@
 .owl-nav {
     font-size: 130%;
     text-align: end !important;
-  }
-  
-  .owl-carousel .owl-nav button.owl-next,
-  .owl-carousel .owl-nav button.owl-prev {
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
     color: rgb(0, 0, 0);
     background-color: rgb(8, 8, 8);
     border-radius: 50%;
     border: 5px solid rgb(14, 14, 14);
     width: 50px;
     height: 50px;
-  }
+}
