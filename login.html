@@ -1,85 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Form</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>login Form</title>
+
+    <style>
+      
+            body {
+                font-family: Arial, sans-serif;
+                padding: 20px;
+                background-image: url('img/banner-new.jpg');
+
+            }
+
+            form {
+                max-width: 800px;
+                padding: 30px;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                margin: 100px 0px 0px 250px;
+            }
+
+
+            label {
+                font-weight: bold;
+                margin-bottom: 10px;
+
+            }
+
+            input[type="text"],
+            input[type="password"] {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 20px;
+                border: 1px solid #aca9a9;
+                border-radius: 5px;
+                color: rgb(0, 0, 0);
+
+            }
+
+            button[type="submit"] {
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            button[type="submit"]:hover {
+                background-color: #45a049;
+            }
+
+            .error {
+                color: #ff0303;
+                font-size: 12px;
+                margin-top: 5px;
+
+            }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $.validator.addMethod("letters", function (value, element) {
+                return this.optional(element) || /^[a-zA-Z0-9\s\-#&()]*$/.test(value);
+            }, "Please enter only letters, numbers, or the following symbols: space, -, #, &, ()");
+
+            $.validator.addMethod("emailtest", function (value, element) {
+                return this.optional(element) || /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$/i.test(value);
+            }, "Please enter a valid email address");
+
+            $("#submit_form").validate({
+                rules: {
+                    emailid: {
+                        required: true,
+                        emailtest: true
+                    },
+                    password: {
+                        required: true,
+                        minlength: 10,
+                        maxlength: 10
+                    },
+                    conformpassword: {
+                        required: true,
+                        equalTo: "#password"
+                    },
+
+                },
+                messages: {
+                    emailid: {
+                        required: "Email field is required",
+                        email: "Please enter a valid email address",
+                        emailtest: "Please enter a valid email address"
+                    },
+                    password: {
+                        required: "Please provide a password",
+                        minlength: "Your password must be at least 10 characters long",
+                        maxlength: "Your password must not exceed 10 characters"
+                    },
+                    conformpassword: {
+                        required: "Please provide a password",
+                        equalTo: "Please enter the same password as above"
+                    },
+
+                },
+                errorPlacement: function (error, element) {
+                    error.addClass("error");
+                    error.insertAfter(element);
+                }
+            });
+        });
+    </script>
 </head>
+
 <body>
+    <form class="login-form" id="submit_form" method="post" action="">
+        <label for="emailid">Email:</label>
+        <input class="input-text" type="text" id="emailid" name="emailid"><br>
 
-    <section>
-        <nav class="navbar navbar-expand-lg px-5 nvbar ">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img class="logo" src="img/logo.png" width="200" height="60">
-                </a>
-                <button class="navbar-toggler nav-btn border border-black" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse  justify-content-end" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Our Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Testimonials</a>
-                        </li>
-                        <li class="nav-item dropdown ">
-                            <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                login
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="login.html">Login</a></li>
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                <!-- <li><a class="dropdown-item" href="#">Another action</a></li> -->
-                                <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </section>
+        <label for="password">Password:</label>
+        <input  class="input-text" type="password" id="password" name="password"><br>
 
-    <section class="form-img">
-        <div class="container-form">
-            <form method="post" onsubmit="return validate()" class="center">
-                <label>User name</label>
-                <input class="user-name" type="text" id="uname" name="firstname" placeholder="User name">
-                <span id="aname" class="text-danger"> </span><br>
-                <label for="password">Password </label>
-                <input type="password" class="user-name" name="password" id="Password" placeholder="Enter Password">
-                <span id="pass" class="text-danger"></span><br>
-                <label for="confirmpassword">Confirm</label>
-                <input type="password" class="user-name" name="confirmpassword" id="Password1"
-                    placeholder="Enter Confirm Password">
-                <span id="pass1" class="text-danger"></span><br>
-                <label>Phone Number</label>
-                <input class="user-name" type="number" id="number" placeholder="Phone number">
-                <span id="mobnumber" class="text-danger"></span><br <label>Email</label>
-                <input class="user-name" type="email" id="email" placeholder="Email">
-                <span id="usremail" class="text-danger"></span><br>
-                <button type="submit" class=" form-button button bg-success text-light mt-4">Success</button>
-            </form>
-        </div>
-    </section>
+        <label for="conformpassword">Confirm Password:</label>
+        <input  class="input-text" type="password" id="conformpassword" name="conformpassword"><br>
 
-    <section class="foter">
-        <div class="d-flex flex-row mb-3 p-3 mx-2 bg-black text-success justify-content-between border">
+        <button type="submit">Submit</button>
+    </form>
+
+    <section  class="mt-5" > 
+        <div  class="d-flex flex-row  p-3  bg-black text-success justify-content-between border">
             <div class="p-2">©2020 - All Right Reserved, Seedkaro.</div>
             <div class="p-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -120,8 +178,13 @@
             </div>
         </div>
     </section>
-
-    <script type="text/javascript" src="index.js"></script>
     
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
+
 </html>
